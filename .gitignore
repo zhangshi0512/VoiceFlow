@@ -1,0 +1,12 @@
+/build/
+/out/
+/third_party/moonshine-voice-windows-x86_64/
+/third_party/*.tar.gz
+*.user
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+!third_party/**/*.lib

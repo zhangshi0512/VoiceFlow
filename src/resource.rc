@@ -1,0 +1,23 @@
+#include "windows.h"
+
+#define IDC_MODE_PTT 2001
+#define IDC_MODE_TOGGLE 2002
+#define IDC_LANG_EN 2003
+#define IDC_LANG_ZH 2004
+#define IDC_FORCE_CPU 2005
+#define IDC_OK 2006
+
+101 DIALOGEX 0, 0, 260, 180
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VoiceFlow Settings"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "Hotkey mode (Ctrl+Shift+Space):", -1, 10, 10, 220, 10
+    CONTROL "Push-to-talk", IDC_MODE_PTT, "Button", BS_AUTORADIOBUTTON, 10, 26, 100, 12
+    CONTROL "Toggle", IDC_MODE_TOGGLE, "Button", BS_AUTORADIOBUTTON, 120, 26, 100, 12
+    LTEXT "Language:", -1, 10, 50, 80, 10
+    CONTROL "English", IDC_LANG_EN, "Button", BS_AUTORADIOBUTTON, 10, 66, 80, 12
+    CONTROL "Chinese", IDC_LANG_ZH, "Button", BS_AUTORADIOBUTTON, 100, 66, 80, 12
+    CONTROL "Force CPU inference", IDC_FORCE_CPU, "Button", BS_AUTOCHECKBOX, 10, 96, 180, 12
+    DEFPUSHBUTTON "OK", IDC_OK, 180, 150, 60, 16
+END
